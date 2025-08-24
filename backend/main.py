@@ -44,6 +44,7 @@ CORS(app, origins=[
     "http://localhost:3000",
     "http://localhost:5173",
     "https://*.vercel.app",
+    "https://agri-aid-kappa.vercel.app"
 ])
 obj = joblib.load('crop_env_model.pkl')
 model,label_enc=obj['model'],obj['le']

@@ -23,7 +23,7 @@ export default function CropRecommendation() {
 
   const callMLModel = async () => {
     try {
-      const response = await fetch('http://localhost:5001/predict', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
